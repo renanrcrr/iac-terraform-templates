@@ -6,6 +6,7 @@ resource "aws_eip" "lb" {
   domain   = "vpc"
 }
 
+# aws_security_group resource depend on aws_eip
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"

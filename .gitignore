@@ -1,0 +1,15 @@
+# iac file
+/git*
+
+# state file
+.terraform*
+
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars

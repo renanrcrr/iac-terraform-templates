@@ -2,6 +2,11 @@
 
 The codes mentioned in this document are used in the study for HashiCorp Certified Terraform Associate 2023.
 
+Topics:
+1.First EC2;
+2.Outputs;
+3.Reference attributes; 
+
 ```sh
 provider "aws" {
   region     = "PUT-YOUR-REGION-HERE"

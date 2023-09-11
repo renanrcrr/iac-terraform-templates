@@ -2,6 +2,7 @@ resource "aws_security_group" "var_demo" {
   name = "renanlabs"
 }
 
+# Allows to create a source to take variables dynamicaly
 ingress {
     from_port = 443
     to_port = 443

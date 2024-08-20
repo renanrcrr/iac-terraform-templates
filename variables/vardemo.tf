@@ -1,25 +1,11 @@
-resource "aws_security_group" "var_demo" {
-  name = "renanlabs"
+resource "aws_security_group" "allow_tls" {
+  name = "renanlabs-sg"
 }
 
-# Allows to create a source to define variables dynamicaly
-ingress {
-    from_port = 443
-    to_port = 443
-    protocol = "tcp"
-    cird_blocks = [var.vpn_ip]
-}
-
-ingress {
-    from_port = 80
-    to_port = 80
-    protocol = "tcp"
-    cird_blocks = [var.vpn_ip]
-}
-
-ingress {
-    from_port = 53
-    to_port = 53
-    protocol = "tcp"
-    cird_blocks = [var.vpn_ip]
+resource "aws_vpc_security_group_ingress_rule" "alow_tls_ipv4" {
+    security_group_id = aws_security_group.allow_tls.id
+    cidr_ipv4 = var.vpn_ip
+    from_port = var.app_port
+    ip_protocol = "tcp"
+    to_port = var.app_port
 }

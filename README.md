@@ -1,11 +1,7 @@
 # Deploying IaC with Terraform
 
-The codes mentioned in this document are used in the study for HashiCorp Certified Terraform Associate 2023.
+The codes mentioned in this document are used in the study for [HashiCorp Certified: Terraform Associate (003)](https://developer.hashicorp.com/certifications/infrastructure-automation).
 
-Topics:
-1.First EC2;
-2.Outputs;
-3.Reference attributes; 
 
 ```sh
 provider "aws" {

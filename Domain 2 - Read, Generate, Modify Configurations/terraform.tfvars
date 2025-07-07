@@ -3,12 +3,14 @@
 # The values here are used to configure the AWS resources in the Terraform scripts
 
 # Precedence (IMPORTANT):
-# 1. Environment variables (Lowest priority)
+# 0. Default values in the variables.tf file (Lowest priority)
+# 1. Environment variables 
 # 2. terraform.tfvars file
 # 3. terraform.tfvars.json file
 # 4. Any *.auto.tfvars or *.auto.tfvars.json files
-# 5. Any -var and -var-file options on the command line
-# 6. Default values in the variables.tf file (Highest priority)
+# 5. Any -var and -var-file options on the command line (Highest priority)
 
 ami = "ami-078772dab3242ee11"
+
+username = "load-balancer"
 

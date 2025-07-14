@@ -12,5 +12,5 @@
 
 ami = "ami-078772dab3242ee11"
 
-username = "load-balancer"
+# username = "load-balancer"
 

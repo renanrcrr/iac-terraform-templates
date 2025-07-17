@@ -1,0 +1,391 @@
+2025-07-17T13:48:40.477+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T13:48:40.477+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T13:48:40.477+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T13:48:40.478+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T13:52:12.196+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T13:52:12.196+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T13:52:12.196+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T13:52:12.196+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T13:56:16.587+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T13:56:16.587+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T13:56:16.587+0930 [INFO]  CLI args: []string{"terraform", "fmt", "main.tf"}
+2025-07-17T13:56:16.587+0930 [INFO]  CLI command args: []string{"fmt", "main.tf"}
+2025-07-17T14:02:39.219+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:02:39.219+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:02:39.219+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:02:39.220+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:02:39.489+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:02:39.489+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:02:42.480+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:02:42.480+0930"
+2025-07-17T14:02:42.884+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=14795
+2025-07-17T14:02:42.886+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:02:42.993+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:02:42.993+0930"
+2025-07-17T14:02:43.048+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=14796
+2025-07-17T14:02:43.048+0930 [INFO]  backend/local: plan calling Plan
+2025-07-17T14:02:43.048+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:02:43.154+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:02:43.154+0930"
+2025-07-17T14:02:43.203+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_req_id=b8a8cba2-e0b2-961b-2867-838ea007641e tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2025-07-17T14:02:43.203+0930"
+2025-07-17T14:02:43.545+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=b8a8cba2-e0b2-961b-2867-838ea007641e timestamp="2025-07-17T14:02:43.545+0930"
+2025-07-17T14:02:43.561+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:02:43.561+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:02:43.569+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=14797
+2025-07-17T14:02:43.570+0930 [INFO]  backend/local: plan operation completed
+2025-07-17T14:04:11.506+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:04:11.506+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:04:11.506+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:04:11.506+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:04:11.775+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:04:11.776+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:04:11.916+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:04:11.916+0930"
+2025-07-17T14:04:12.315+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=14905
+2025-07-17T14:04:12.316+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:04:12.421+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:04:12.420+0930"
+2025-07-17T14:04:12.475+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=14906
+2025-07-17T14:04:12.475+0930 [INFO]  backend/local: plan calling Plan
+2025-07-17T14:04:12.475+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:04:12.582+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:04:12.582+0930"
+2025-07-17T14:04:12.628+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8cbac08-a222-7219-0483-a56d9e023ae9 tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" timestamp="2025-07-17T14:04:12.628+0930"
+2025-07-17T14:04:13.211+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8cbac08-a222-7219-0483-a56d9e023ae9 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T14:04:13.210+0930"
+2025-07-17T14:04:13.227+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T14:04:13.227+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T14:04:13.236+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=14907
+2025-07-17T14:04:13.237+0930 [INFO]  backend/local: plan operation completed
+2025-07-17T14:05:18.313+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:05:18.313+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:05:18.313+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T14:05:18.313+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T14:05:22.865+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:05:22.865+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:05:22.865+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:05:22.865+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:05:23.121+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:05:23.122+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:05:23.232+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:05:23.232+0930"
+2025-07-17T14:05:23.633+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=15042
+2025-07-17T14:05:23.634+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:05:23.746+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:05:23.746+0930"
+2025-07-17T14:05:23.801+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=15043
+2025-07-17T14:05:23.801+0930 [INFO]  backend/local: plan calling Plan
+2025-07-17T14:05:23.802+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:05:23.912+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:05:23.912+0930"
+2025-07-17T14:05:23.959+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=7582dd92-4912-0f6f-2a23-88188575b2f5 tf_rpc=ConfigureProvider timestamp="2025-07-17T14:05:23.959+0930"
+2025-07-17T14:05:24.100+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=7582dd92-4912-0f6f-2a23-88188575b2f5 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2025-07-17T14:05:24.100+0930"
+2025-07-17T14:05:24.107+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:05:24.107+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:05:24.115+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=15044
+2025-07-17T14:05:24.116+0930 [INFO]  backend/local: plan operation completed
+2025-07-17T14:09:00.064+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:09:00.064+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:09:00.064+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:09:00.064+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:09:00.335+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:38:19.134+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:38:19.134+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:38:19.134+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:38:19.134+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:38:19.413+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:38:57.554+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:38:57.555+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:38:57.555+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T14:38:57.555+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T14:39:02.411+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:39:02.412+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:39:02.412+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:39:02.412+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:39:02.672+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:39:02.673+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:39:02.840+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:39:02.840+0930"
+2025-07-17T14:39:03.244+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16039
+2025-07-17T14:39:03.244+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:39:03.350+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:39:03.350+0930"
+2025-07-17T14:39:03.365+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16040
+2025-07-17T14:39:03.365+0930 [INFO]  backend/local: plan calling Plan
+2025-07-17T14:39:03.365+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:39:03.471+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:39:03.471+0930"
+2025-07-17T14:39:08.523+0930 [ERROR] provider.terraform-provider-aws_v6.3.0_x5: Response contains error diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.28.0/tfprotov5/internal/diag/diagnostics.go:58 @module=sdk.proto
+  diagnostic_detail=
+  | Please see https://registry.terraform.io/providers/hashicorp/aws
+  | for more information about providing credentials.
+  | 
+  | Error: failed to refresh cached credentials, no EC2 IMDS role found, operation error ec2imds: GetMetadata, request canceled, context deadline exceeded
+   diagnostic_summary="No valid credential sources found" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=2fb97156-2e20-9dcb-9cc8-2c7a4df8ab7d tf_rpc=Configure diagnostic_severity=ERROR tf_proto_version=5.9 timestamp="2025-07-17T14:39:08.523+0930"
+2025-07-17T14:39:08.524+0930 [ERROR] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]" error: No valid credential sources found
+2025-07-17T14:39:08.524+0930 [ERROR] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]" error: Invalid provider configuration
+2025-07-17T14:39:08.525+0930 [WARN]  Planning encountered errors, so plan is not applyable
+2025-07-17T14:39:08.525+0930 [INFO]  backend/local: plan operation completed
+2025-07-17T14:39:08.610+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16041
+2025-07-17T14:42:53.837+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:42:53.838+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:42:53.838+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T14:42:53.838+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T14:42:54.112+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T14:42:54.113+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:42:54.265+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:42:54.265+0930"
+2025-07-17T14:42:54.667+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16238
+2025-07-17T14:42:54.668+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:42:54.774+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:42:54.774+0930"
+2025-07-17T14:42:54.782+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:42:54.878+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:42:54.877+0930"
+2025-07-17T14:42:54.891+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16239
+2025-07-17T14:42:54.933+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16240
+2025-07-17T14:42:54.933+0930 [INFO]  backend/local: plan calling Plan
+2025-07-17T14:42:54.934+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:42:55.044+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:42:55.044+0930"
+2025-07-17T14:42:55.051+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:42:55.153+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:42:55.153+0930"
+2025-07-17T14:42:55.162+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_req_id=00ec3e22-d3e5-a916-d6d1-888f44122c70 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp="2025-07-17T14:42:55.162+0930"
+2025-07-17T14:42:55.201+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e4a4c7fc-9c65-07b1-a86b-9161c96dc600 tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp="2025-07-17T14:42:55.200+0930"
+2025-07-17T14:42:55.292+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=00ec3e22-d3e5-a916-d6d1-888f44122c70 tf_rpc=ConfigureProvider tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T14:42:55.292+0930"
+2025-07-17T14:42:55.298+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:42:55.298+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T14:42:55.302+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16241
+2025-07-17T14:42:55.605+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_req_id=e4a4c7fc-9c65-07b1-a86b-9161c96dc600 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T14:42:55.604+0930"
+2025-07-17T14:42:55.622+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.s3.aws_s3_bucket.terraform-s3-bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .logging: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .object_lock_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .server_side_encryption_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .versioning: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cors_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .grant: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .lifecycle_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .replication_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .website: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-17T14:42:55.636+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16242
+2025-07-17T14:42:55.639+0930 [INFO]  backend/local: plan operation completed
+2025-07-17T14:47:51.288+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:47:51.288+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:47:51.288+0930 [INFO]  CLI args: []string{"terraform", "apply", "-auto-approve"}
+2025-07-17T14:47:51.289+0930 [INFO]  CLI command args: []string{"apply", "-auto-approve"}
+2025-07-17T14:47:51.548+0930 [INFO]  backend/local: starting Apply operation
+2025-07-17T14:47:51.549+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:51.658+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:51.658+0930"
+2025-07-17T14:47:52.056+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16379
+2025-07-17T14:47:52.057+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:52.164+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:52.164+0930"
+2025-07-17T14:47:52.171+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:52.267+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:52.267+0930"
+2025-07-17T14:47:52.281+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16380
+2025-07-17T14:47:52.322+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16381
+2025-07-17T14:47:52.322+0930 [INFO]  backend/local: apply calling Plan
+2025-07-17T14:47:52.323+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:52.430+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:52.430+0930"
+2025-07-17T14:47:52.436+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:52.532+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:52.532+0930"
+2025-07-17T14:47:52.540+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=58be0a34-e2e3-7607-136a-8bf211effea4 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2025-07-17T14:47:52.540+0930"
+2025-07-17T14:47:52.579+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=a4c3799d-255e-4060-9949-c52313a659a9 tf_rpc=ConfigureProvider timestamp="2025-07-17T14:47:52.579+0930"
+2025-07-17T14:47:52.715+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=a4c3799d-255e-4060-9949-c52313a659a9 tf_rpc=ConfigureProvider timestamp="2025-07-17T14:47:52.715+0930"
+2025-07-17T14:47:52.721+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:47:52.721+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T14:47:52.727+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16383
+2025-07-17T14:47:52.896+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=58be0a34-e2e3-7607-136a-8bf211effea4 timestamp="2025-07-17T14:47:52.896+0930"
+2025-07-17T14:47:52.911+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.s3.aws_s3_bucket.terraform-s3-bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .cors_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .grant: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .lifecycle_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .logging: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .replication_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .website: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .object_lock_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .server_side_encryption_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .versioning: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-17T14:47:52.926+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16382
+2025-07-17T14:47:52.994+0930 [INFO]  backend/local: apply calling Apply
+2025-07-17T14:47:52.996+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:53.104+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:53.104+0930"
+2025-07-17T14:47:53.110+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:47:53.205+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:47:53.205+0930"
+2025-07-17T14:47:53.213+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=4788e803-2e35-d582-9da0-cd87ddc3e1dd tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T14:47:53.213+0930"
+2025-07-17T14:47:53.251+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_req_id=20288442-c98e-54fc-92b6-a7f0ccfbfb5b tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp="2025-07-17T14:47:53.251+0930"
+2025-07-17T14:47:53.373+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=20288442-c98e-54fc-92b6-a7f0ccfbfb5b tf_rpc=ConfigureProvider @module=aws.aws-base timestamp="2025-07-17T14:47:53.373+0930"
+2025-07-17T14:47:53.380+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T14:47:53.380+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T14:47:53.380+0930 [INFO]  Starting apply for module.sg.aws_security_group.dev
+2025-07-17T14:47:53.380+0930 [INFO]  Starting apply for module.sg.aws_security_group.prod
+2025-07-17T14:47:53.562+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_req_id=4788e803-2e35-d582-9da0-cd87ddc3e1dd tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2025-07-17T14:47:53.561+0930"
+2025-07-17T14:47:53.577+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.s3.aws_s3_bucket.terraform-s3-bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .versioning: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cors_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .grant: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .lifecycle_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .logging: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .replication_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .website: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .object_lock_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .server_side_encryption_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-17T14:47:53.577+0930 [INFO]  Starting apply for module.s3.aws_s3_bucket.terraform-s3-bucket
+2025-07-17T14:47:54.332+0930 [ERROR] provider.terraform-provider-aws_v6.3.0_x5: Response contains error diagnostic: tf_rpc=ApplyResourceChange @module=sdk.proto diagnostic_detail="" diagnostic_summary="creating S3 Bucket (terraform-s3-bucket): operation error S3: CreateBucket, https response error StatusCode: 409, RequestID: 3WFR43NZVDV3EYXX, HostID: pEvAH7teA+GD5UYNzsTEgpYzV5B58cI50IkSvRyIGo+4qjJpFe3cu0ce5OQ42I5TbXTtVuQMV6zUVjG8SxI0o1kxgKSOy3L0c0ag3PNub70=, BucketAlreadyExists: " tf_proto_version=5.9 tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/terraform-plugin-go@v0.28.0/tfprotov5/internal/diag/diagnostics.go:58 diagnostic_severity=ERROR tf_req_id=99bdc245-197e-876b-de2e-1e6bf57e7966 tf_resource_type=aws_s3_bucket timestamp="2025-07-17T14:47:54.332+0930"
+2025-07-17T14:47:54.341+0930 [ERROR] vertex "module.s3.aws_s3_bucket.terraform-s3-bucket" error: creating S3 Bucket (terraform-s3-bucket): operation error S3: CreateBucket, https response error StatusCode: 409, RequestID: 3WFR43NZVDV3EYXX, HostID: pEvAH7teA+GD5UYNzsTEgpYzV5B58cI50IkSvRyIGo+4qjJpFe3cu0ce5OQ42I5TbXTtVuQMV6zUVjG8SxI0o1kxgKSOy3L0c0ag3PNub70=, BucketAlreadyExists:
+2025-07-17T14:47:55.189+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16385
+2025-07-17T14:47:55.210+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16384
+2025-07-17T14:49:44.383+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T14:49:44.384+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T14:49:44.384+0930 [INFO]  CLI args: []string{"terraform", "destroy", "-auto-approve"}
+2025-07-17T14:49:44.384+0930 [INFO]  CLI command args: []string{"destroy", "-auto-approve"}
+2025-07-17T14:49:44.644+0930 [INFO]  backend/local: starting Apply operation
+2025-07-17T14:49:44.646+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:44.765+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:44.765+0930"
+2025-07-17T14:49:45.164+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16475
+2025-07-17T14:49:45.165+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:45.272+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:45.272+0930"
+2025-07-17T14:49:45.279+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:45.376+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:45.376+0930"
+2025-07-17T14:49:45.390+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16476
+2025-07-17T14:49:45.431+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16477
+2025-07-17T14:49:45.431+0930 [INFO]  backend/local: apply calling Plan
+2025-07-17T14:49:45.432+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:45.539+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:45.539+0930"
+2025-07-17T14:49:45.547+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:45.648+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:45.647+0930"
+2025-07-17T14:49:45.656+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f75317f4-0acc-3d6f-3e6d-56076011488b tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T14:49:45.656+0930"
+2025-07-17T14:49:45.695+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=616ea64c-d2a5-1617-45d0-f63d396abafd tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base timestamp="2025-07-17T14:49:45.695+0930"
+2025-07-17T14:49:45.840+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=616ea64c-d2a5-1617-45d0-f63d396abafd @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_rpc=ConfigureProvider @module=aws.aws-base timestamp="2025-07-17T14:49:45.840+0930"
+2025-07-17T14:49:46.051+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f75317f4-0acc-3d6f-3e6d-56076011488b @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp="2025-07-17T14:49:46.051+0930"
+2025-07-17T14:49:46.064+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.s3.aws_s3_bucket.terraform-s3-bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .cors_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .grant: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .replication_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .server_side_encryption_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .website: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .lifecycle_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .logging: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .object_lock_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .versioning: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-17T14:49:46.073+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16478
+2025-07-17T14:49:46.129+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .tags: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:49:46.135+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+      - .tags: planned value cty.MapValEmpty(cty.String) for a non-computed attribute
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+2025-07-17T14:49:46.149+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16479
+2025-07-17T14:49:46.150+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:46.276+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:46.276+0930"
+2025-07-17T14:49:46.325+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_req_id=da6cdac8-a8ff-39e2-cbf0-d75e8e42240e timestamp="2025-07-17T14:49:46.325+0930"
+2025-07-17T14:49:46.449+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=da6cdac8-a8ff-39e2-cbf0-d75e8e42240e @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp="2025-07-17T14:49:46.449+0930"
+2025-07-17T14:49:46.463+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16480
+2025-07-17T14:49:46.527+0930 [INFO]  backend/local: apply calling Apply
+2025-07-17T14:49:46.528+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T14:49:46.634+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T14:49:46.634+0930"
+2025-07-17T14:49:46.680+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=0cf02a7e-c994-9d1d-00de-1cc3ba90e405 @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2025-07-17T14:49:46.680+0930"
+2025-07-17T14:49:46.803+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider tf_req_id=0cf02a7e-c994-9d1d-00de-1cc3ba90e405 timestamp="2025-07-17T14:49:46.803+0930"
+2025-07-17T14:49:46.808+0930 [INFO]  Starting apply for module.sg.aws_security_group.dev
+2025-07-17T14:49:46.808+0930 [INFO]  Starting apply for module.sg.aws_security_group.prod
+2025-07-17T14:49:46.995+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Deleting EC2 Security Group: tf_req_id=761ee17a-0269-c014-cf2a-1a0a9c0b6f12 @caller=github.com/hashicorp/terraform-provider-aws/internal/service/ec2/vpc_security_group.go:376 tf_mux_provider="*schema.GRPCProviderServer" tf_resource_type=aws_security_group tf_rpc=ApplyResourceChange vpc_id=vpc-0aa07f2aaa58846ee @module=aws id=sg-028a5b827953a1185 tf_provider_addr=registry.terraform.io/hashicorp/aws timestamp="2025-07-17T14:49:46.995+0930"
+2025-07-17T14:49:46.998+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Deleting EC2 Security Group: tf_resource_type=aws_security_group tf_rpc=ApplyResourceChange @caller=github.com/hashicorp/terraform-provider-aws/internal/service/ec2/vpc_security_group.go:376 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=4f0a9757-05bc-dcba-6dda-103c191d5ec3 vpc_id=vpc-0aa07f2aaa58846ee @module=aws id=sg-08b299b769f1dce14 tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T14:49:46.998+0930"
+2025-07-17T14:49:47.599+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=16481
+2025-07-17T15:04:28.975+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T15:04:28.975+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T15:04:28.976+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T15:04:28.976+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T15:04:29.243+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T15:05:01.298+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T15:05:01.299+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T15:05:01.299+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T15:05:01.299+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T15:10:19.799+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T15:10:19.799+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T15:10:19.799+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T15:10:19.799+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T15:10:20.068+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T15:10:24.337+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T15:10:24.337+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T15:10:24.337+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T15:10:24.338+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T15:17:37.661+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T15:17:37.661+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T15:17:37.661+0930 [INFO]  CLI args: []string{"terraform", "init"}
+2025-07-17T15:17:37.661+0930 [INFO]  CLI command args: []string{"init"}
+2025-07-17T15:18:07.905+0930 [INFO]  Terraform version: 1.12.2
+2025-07-17T15:18:07.905+0930 [INFO]  Go runtime version: go1.24.2
+2025-07-17T15:18:07.905+0930 [INFO]  CLI args: []string{"terraform", "plan"}
+2025-07-17T15:18:07.905+0930 [INFO]  CLI command args: []string{"plan"}
+2025-07-17T15:18:08.161+0930 [INFO]  backend/local: starting Plan operation
+2025-07-17T15:18:08.161+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T15:18:08.300+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T15:18:08.300+0930"
+2025-07-17T15:18:08.707+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=17821
+2025-07-17T15:18:08.708+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T15:18:08.819+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T15:18:08.819+0930"
+2025-07-17T15:18:08.826+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T15:18:08.926+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T15:18:08.926+0930"
+2025-07-17T15:18:08.939+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=17822
+2025-07-17T15:18:08.981+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=17823
+2025-07-17T15:18:08.981+0930 [INFO]  backend/local: plan calling Plan
+2025-07-17T15:18:08.982+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T15:18:09.090+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T15:18:09.090+0930"
+2025-07-17T15:18:09.097+0930 [INFO]  provider: configuring client automatic mTLS
+2025-07-17T15:18:09.194+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: configuring server automatic mTLS: timestamp="2025-07-17T15:18:09.194+0930"
+2025-07-17T15:18:09.203+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=5f3b0017-c2b4-99a4-be9c-d099194f836f tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp="2025-07-17T15:18:09.203+0930"
+2025-07-17T15:18:09.242+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved credentials: tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 tf_aws.credentials_source="SharedConfigCredentials: /Users/RenanRodrigues/.aws/credentials" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=9aad2873-6e76-5dc1-087e-7d8a95c2a87f @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" timestamp="2025-07-17T15:18:09.242+0930"
+2025-07-17T15:18:09.373+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=9aad2873-6e76-5dc1-087e-7d8a95c2a87f timestamp="2025-07-17T15:18:09.373+0930"
+2025-07-17T15:18:09.381+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.prod, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T15:18:09.382+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.s3.aws_s3_bucket.terraform-s3-bucket, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .replication_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .cors_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .grant: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .lifecycle_rule: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .object_lock_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .server_side_encryption_configuration: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .versioning: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .website: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .logging: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2025-07-17T15:18:09.389+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=17825
+2025-07-17T15:18:09.562+0930 [INFO]  provider.terraform-provider-aws_v6.3.0_x5: Retrieved caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=5f3b0017-c2b4-99a4-be9c-d099194f836f tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.65/logging/tf_logger.go:39 timestamp="2025-07-17T15:18:09.562+0930"
+2025-07-17T15:18:09.569+0930 [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for module.sg.aws_security_group.dev, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .description: planned value cty.StringVal("Managed by Terraform") for a non-computed attribute
+      - .revoke_rules_on_delete: planned value cty.False for a non-computed attribute
+2025-07-17T15:18:09.577+0930 [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.3.0/darwin_arm64/terraform-provider-aws_v6.3.0_x5 id=17824
+2025-07-17T15:18:09.578+0930 [INFO]  backend/local: plan operation completed
